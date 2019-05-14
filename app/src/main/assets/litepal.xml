@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="weather" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.ming.weather.db.Province" />
+        <mapping class="com.ming.weather.db.City" />
+        <mapping class="com.ming.weather.db.County" />
+    </list>
+</litepal>

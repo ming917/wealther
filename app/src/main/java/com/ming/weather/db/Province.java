@@ -1,9 +1,11 @@
-package com.ming.weather.model;
+package com.ming.weather.db;
 
-public class Province {
+import org.litepal.crud.LitePalSupport;
+
+public class Province extends LitePalSupport {
     private int id;
     private String provinceName;
-    private String provinceCode;
+    private int provinceCode;
 
 
     public int getId() {
@@ -22,11 +24,11 @@ public class Province {
         this.provinceName = provinceName;
     }
 
-    public String getProvinceCode() {
+    public int getProvinceCode() {
         return provinceCode;
     }
 
-    public void setProvinceCode(String provinceCode) {
+    public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
 }

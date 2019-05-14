@@ -1,9 +1,11 @@
-package com.ming.weather.model;
+package com.ming.weather.db;
 
-public class County {
+import org.litepal.crud.LitePalSupport;
+
+public class County extends LitePalSupport {
     private int id;
     private String countyName;
-    private String countyCode;
+    private String weatherId;
     private int cityId;
 
     public int getId() {
@@ -23,11 +25,11 @@ public class County {
     }
 
     public String getCountyCode() {
-        return countyCode;
+        return weatherId;
     }
 
-    public void setCountyCode(String countyCode) {
-        this.countyCode = countyCode;
+    public void setCountyCode(String weatherId) {
+        this.weatherId = weatherId;
     }
 
     public int getCityId() {
