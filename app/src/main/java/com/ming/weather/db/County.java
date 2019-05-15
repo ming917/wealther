@@ -24,11 +24,11 @@ public class County extends LitePalSupport {
         this.countyName = countyName;
     }
 
-    public String getCountyCode() {
+    public String getWeatherId() {
         return weatherId;
     }
 
-    public void setCountyCode(String weatherId) {
+    public void setWeatherId(String weatherId) {
         this.weatherId = weatherId;
     }
 
